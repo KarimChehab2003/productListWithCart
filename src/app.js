@@ -7,7 +7,7 @@ let totalQuantity = 0;
 // Fetch data and create Product instances
 async function fetchProductsData() {
     try {
-        const response = await fetch('../data.json');
+        const response = await fetch('./src/data.json');
         const data = await response.json();
         return data.map(desert => new Product(desert.category, desert.name, desert.price, desert.image));
     } catch (error) {
