@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "RedHat";
+  src: url("../assets/fonts/static/RedHatText-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RedHat-SemiBold";
+  src: url("../assets/fonts/static/RedHatText-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "RedHat-Bold";
+  src: url("../assets/fonts/static/RedHatText-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  font-family: "RedHat";
+}
+
+.addToCartText {
+  white-space: nowrap;
+}
+
+.initialStateBtn:hover {
+  cursor: pointer;
+}
+
+.addToCartIcons {
+  transition: 0.2s;
+}
+
+.addToCartIcons:hover {
+  background-color: white;
+  /* fill: #c83b0e; */
+
+  img {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(99%) saturate(2273%)
+      hue-rotate(5deg) brightness(89%) contrast(89%);
+  }
+}
+
+.closeIcon {
+  --bs-focus-ring-color: rgba(0, 0, 0, 0);
+}
+
+.confirmOrderBtn:hover {
+  background-color: #9f300b !important;
+}
